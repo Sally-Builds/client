@@ -11,12 +11,39 @@ import MainLayout from "../containers/Layouts/MainLayout";
 import Home from "../containers/Views/Home";
 
 const Router = () => {
+  const tributes = [
+    { name: "Agu Ejindu" },
+    { name: "Euphoria zimuzor" },
+    { name: "Eugene Lenglet" },
+    { name: "Jane Humphrey" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etiboksdjf" },
+    { name: "Agu Ejindu" },
+    { name: "Euphoria zimuzor" },
+    { name: "Eugene Lenglet" },
+    { name: "Jane Humphrey" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+    { name: "Samuel Etibo" },
+  ];
+
   return (
     <div className="">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainLayout />}>
-            <Route path="" element={<Home />} />
+            <Route path="" element={<Home tributes={tributes} />} />
           </Route>
         </Routes>
       </BrowserRouter>
